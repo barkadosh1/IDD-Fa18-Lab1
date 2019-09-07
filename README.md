@@ -1,32 +1,32 @@
-# IDD-Fa18-Lab1: Blink!
+# IDD-Fa19-Lab1: Blink!
 
-**A lab report by John Q. Student**
-
-**Fork** this repository to get a template for Lab 1 for *Developing and Designing Interactive Devices* at Cornell Tech, Fall 2018. You should modify this `README.md` file to delete this paragraph and update below. As the lab asks:
-
-> Include your responses to the bold questions on your own fork of the lab activities. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as `README.md` pages on your GitHub, and post a link to that on your main class hub page.
-
-We've copied the questions from the lab here. Answer them below!
+**A lab report by Bar Kadosh*
 
 ## Part A. Set Up a Breadboard
 
-[insert a photo of your breadboard setup here]
+To initially set up my breadboard, I connected the +5V pin of the Arduino to the red rail (on the same side of the breadboard that the pin is on) and the GND pin of the Arduino to the blue rail (on the same side of the breadboard that the pin is on). While not necessary, I also connected the opposite red rail to the initial red rail and the opposite blue rail to the initial blue rail.
 
+<img src="https://github.com/barkadosh1/IDD-Fa18-Lab1/blob/master/IMG_9386.jpeg" width="600" height="500">
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 100 Ohm resistor?**
+**a. What color stripes are on a 220 Ohm resistor?**
+On our 220 Ohm resistor, the colors, in order, are: red, red, black, black, brown. Using a resistor color coding chart, this translates to the follow: the first digit is 2 (red), the second digit is 2 (red), the third digit is 0 (black), the multiplier 10<sup>0</sup> Ohms (black), and the tolerance is +/- 1% (brown).
  
 **b. What do you have to do to light your LED?**
-
+After constructing the circuit described in the schematic, our LED initially still does not light up. In order to allow it to light up, I must press the button -- when pressed, the LED lights up. When the button is not pressed, there is essentially a break in the circuit, and therefore, the LED can not light up.
 
 ## Part C. Blink a LED using Arduino
 
 ### 1. Blink the on-board LED
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+To begin, we are given the Blink code example. Within this code, nothing has to be changed in order to make the LED blink. In the void setup() section, the line "pinMode(LED_BUILTIN, OUTPUT)" already establishes that pin 13 (LED_BUILTIN) is an output. In the void loop() section (which runs a continuous loop), the example code already contains the line "digitalWrite(LED_BUILTIN, HIGH)" to turn the LED on, the line "delay(1000)" to keep the LED on for 1 second, the line "digitalWrite(LED_BUILTIN, LOW)" to turn the LED off, and another "delay(1000)" line to keep the LED off for another second before repeating the loop. Therefore, all of the code needed to make the LED blink is already provided in the example code. 
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
+In order to change the rate of blinking, the line "delay(1000)" after the LED is turned off must be changed. This will change how long the loop will be delayed before repeating -- in order words, this will delay how long the loop will wait before turning the LED on. If the value 1000 is increased, the rate of blinking will be slower; if the value is decreased, the rate of blinking will be faster. 
+
+The other line "delay(1000" in between turning the LED on and off controls how long the actual light stays on, not how much time occurs in between blinking. 
 
 **c. What circuit element would you want to add to protect the board and external LED?**
  
