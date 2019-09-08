@@ -33,23 +33,32 @@ The other line "delay(1000" in between turning the LED on and off controls how l
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
+For modifying my code, I did a fun example where I made the lights blink with the song "Eye of the Tiger." The code and a video are below.
+
+[Eye of the Tiger Blinking Code - Bar Kadosh](https://github.com/barkadosh1/IDD-Fa19-Lab1/blob/master/sketch_eye_of_tiger.ino)
+
+[Eye of the Tiger Blinking Video - Bar Kadosh](https://youtu.be/WHScfbW2Z6Q)
 
 
 ### 2. Blink your LED
 
 **Make a video of your LED blinking, and add it to your lab submission.**
-
-[link to your video here; feel free to upload to youtube and just paste in a link here]
-
+[Blinking Pin 9 - Bar Kadosh](https://youtu.be/Xn55NqshU2c)
 
 ## Part D. Manually fade an LED
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
-
+As is seen in the video, I am ALMOST able to get the LED to glow the whole turning range of the potentiometer. While the LED gets very bright on one end of the potentiometer, the LED does not fully turn off on the other end of the potentiometer. I imagine that this end of the potentiometer does not provide such a high resistance that is capable of completely blocking the flow of current, and therefore does not dim the LED fully.
+[Potentiometer - Bar Kadosh](https://youtu.be/ckfLt4m3FOc)
 
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+Only two things need to be modified. The output pin on the board must be changed so that the wire connects to pin 11. In the code, the value of "led" must be updated to a value of 11 so that the output pin is set to 11. A video of the fade is below.
+
+In order to actually change the way it fades, there is a variable "fadeAmount" in the code. Increasing the value of this variable will cause the LED to fade and unfade faster.
+
+[Fade - Bar Kadosh](https://youtu.be/1BE0TMpyLh8)
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
