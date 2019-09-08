@@ -10,8 +10,10 @@ To initially set up my breadboard, I connected the +5V pin of the Arduino to the
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 220 Ohm resistor?**
+**a. What color stripes are on a 220 Ohm resistor and a 100 ohm resistor?**
 On our 220 Ohm resistor, the colors, in order, are: red, red, black, black, brown. Using a resistor color coding chart, this translates to the follow: the first digit is 2 (red), the second digit is 2 (red), the third digit is 0 (black), the multiplier 10<sup>0</sup> Ohms (black), and the tolerance is +/- 1% (brown).
+
+Using the same color code/color convention, we can predict what the color stripes on a 100 ohm resistor would be: brown, black, black, black. Brown represents the first digit (1), the first black represents the second digit (0), the second black represents the third digit (0), and the last black represents a multiplier of 1 Ohm. Since the 5th color represents the tolerance, I will not attempt to predict what it may be, as such a value is arbitrary.
  
 **b. What do you have to do to light your LED?**
 After constructing the circuit described in the schematic, our LED initially still does not light up. In order to allow it to light up, I must press the button -- when pressed, the LED lights up. When the button is not pressed, there is essentially a break in the circuit, and therefore, the LED can not light up.
@@ -43,6 +45,7 @@ For modifying my code, I did a fun example where I made the lights blink with th
 ### 2. Blink your LED
 
 **Make a video of your LED blinking, and add it to your lab submission.**
+
 [Blinking Pin 9 - Bar Kadosh](https://youtu.be/Xn55NqshU2c)
 
 ## Part D. Manually fade an LED
