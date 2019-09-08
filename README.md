@@ -52,6 +52,7 @@ For modifying my code, I did a fun example where I made the lights blink with th
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 As is seen in the video, I am ALMOST able to get the LED to glow the whole turning range of the potentiometer. While the LED gets very bright on one end of the potentiometer, the LED does not fully turn off on the other end of the potentiometer. I imagine that this end of the potentiometer does not provide such a high resistance that is capable of completely blocking the flow of current, and therefore does not dim the LED fully.
+
 [Potentiometer - Bar Kadosh](https://youtu.be/ckfLt4m3FOc)
 
 ## Part E. Fade an LED using Arduino
@@ -85,5 +86,8 @@ In order to actually change the way it fades, there is a variable "fadeAmount" i
 ### 3. Build your light!
 
 **Make a video showing off your Frankenlight.**
+As is seen in the video, once I plug the plug of my device into an electrical out, the LED lights up.
+
+[Frankenlight - Bar Kadosh](https://youtu.be/AJwrvC-jkeQ)
 
 **Include any schematics or photos in your lab write-up.**
