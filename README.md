@@ -35,8 +35,16 @@ In order to change the rate of blinking, the line "delay(1000)" after the LED is
 The other line "delay(1000" in between turning the LED on and off controls how long the actual light stays on, not how much time occurs in between blinking. 
 
 **c. What circuit element would you want to add to protect the board and external LED?**
+
+We would like to add a resistor to protect our board and external LED. Given Ohm's law, V = IR, we can see that for a given voltage, having a low resistance will lead to a very high current. Therefore, we should add a resistance to lower the current flowing to the LED, otherwise the LED might break. 
  
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
+
+Starting at a delay of 15 ms, I began lowering the delay by 1 ms and observing. At 10 ms, the LED appeared to be a continuous light (meaning, no blinking). However, I was still able to notice slight vibrations. However, at a delay of 9 ms, the light was truly constant (no vibrations and no blinking). In order to prove that it is in fact still blinking, I recorded 2 videos: one at normal speed and one in slow motion and pasted them below. As the slow motion video shows, the blinking is in fact still occuring, our eyes just aren't capable of seeing it.
+
+[Normal Speed - Bar Kadosh](https://youtu.be/1IWH4m2lmdI)
+
+[Slow Motion - Bar Kadosh]https://youtu.be/ApmYkxbyZ-I)
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
@@ -73,6 +81,7 @@ In order to actually change the way it fades, there is a variable "fadeAmount" i
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
+AnalogWrite() is a method that can be used with a PWM output pin. Since we assign values between 0-255, we can control the percentage of the time that the output is HIGH or LOW (255 meaning always on, 0 meaning always off, and values in between adjusting proportionally). This is different from digitalWrite(), which only allows for two states: HIGH (5 V in our case) or LOW (off in our case). 
 
 ## Part F. FRANKENLIGHT!!!
 
