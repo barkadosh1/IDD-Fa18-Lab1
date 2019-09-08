@@ -86,6 +86,7 @@ In order to actually change the way it fades, there is a variable "fadeAmount" i
 ### 3. Build your light!
 
 **Make a video showing off your Frankenlight.**
+
 As is seen in the video, once I plug the plug of my device into an electrical out, the LED lights up.
 
 [Frankenlight - Bar Kadosh](https://youtu.be/AJwrvC-jkeQ)
