@@ -1,6 +1,6 @@
 # IDD-Fa19-Lab1: Blink!
 
-**A lab report by Bar Kadosh*
+**A lab report by Bar Kadosh**
 
 ## Part A. Set Up a Breadboard
 
@@ -97,5 +97,3 @@ In order to actually change the way it fades, there is a variable "fadeAmount" i
 As is seen in the video, once I plug the plug of my device into an electrical out, the LED lights up.
 
 [Frankenlight - Bar Kadosh](https://youtu.be/AJwrvC-jkeQ)
-
-**Include any schematics or photos in your lab write-up.**
