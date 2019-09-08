@@ -11,11 +11,13 @@ To initially set up my breadboard, I connected the +5V pin of the Arduino to the
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 220 Ohm resistor and a 100 ohm resistor?**
+
 On our 220 Ohm resistor, the colors, in order, are: red, red, black, black, brown. Using a resistor color coding chart, this translates to the follow: the first digit is 2 (red), the second digit is 2 (red), the third digit is 0 (black), the multiplier 10<sup>0</sup> Ohms (black), and the tolerance is +/- 1% (brown).
 
 Using the same color code/color convention, we can predict what the color stripes on a 100 ohm resistor would be: brown, black, black, black. Brown represents the first digit (1), the first black represents the second digit (0), the second black represents the third digit (0), and the last black represents a multiplier of 1 Ohm. Since the 5th color represents the tolerance, I will not attempt to predict what it may be, as such a value is arbitrary.
  
 **b. What do you have to do to light your LED?**
+
 After constructing the circuit described in the schematic, our LED initially still does not light up. In order to allow it to light up, I must press the button -- when pressed, the LED lights up. When the button is not pressed, there is essentially a break in the circuit, and therefore, the LED can not light up.
 
 ## Part C. Blink a LED using Arduino
@@ -23,9 +25,11 @@ After constructing the circuit described in the schematic, our LED initially sti
 ### 1. Blink the on-board LED
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+
 To begin, we are given the Blink code example. Within this code, nothing has to be changed in order to make the LED blink. In the void setup() section, the line "pinMode(LED_BUILTIN, OUTPUT)" already establishes that pin 13 (LED_BUILTIN) is an output. In the void loop() section (which runs a continuous loop), the example code already contains the line "digitalWrite(LED_BUILTIN, HIGH)" to turn the LED on, the line "delay(1000)" to keep the LED on for 1 second, the line "digitalWrite(LED_BUILTIN, LOW)" to turn the LED off, and another "delay(1000)" line to keep the LED off for another second before repeating the loop. Therefore, all of the code needed to make the LED blink is already provided in the example code. 
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
+
 In order to change the rate of blinking, the line "delay(1000)" after the LED is turned off must be changed. This will change how long the loop will be delayed before repeating -- in order words, this will delay how long the loop will wait before turning the LED on. If the value 1000 is increased, the rate of blinking will be slower; if the value is decreased, the rate of blinking will be faster. 
 
 The other line "delay(1000" in between turning the LED on and off controls how long the actual light stays on, not how much time occurs in between blinking. 
@@ -35,6 +39,7 @@ The other line "delay(1000" in between turning the LED on and off controls how l
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
+
 For modifying my code, I did a fun example where I made the lights blink with the song "Eye of the Tiger." The code and a video are below.
 
 [Eye of the Tiger Blinking Code - Bar Kadosh](https://github.com/barkadosh1/IDD-Fa19-Lab1/blob/master/sketch_eye_of_tiger.ino)
@@ -51,6 +56,7 @@ For modifying my code, I did a fun example where I made the lights blink with th
 ## Part D. Manually fade an LED
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
+
 As is seen in the video, I am ALMOST able to get the LED to glow the whole turning range of the potentiometer. While the LED gets very bright on one end of the potentiometer, the LED does not fully turn off on the other end of the potentiometer. I imagine that this end of the potentiometer does not provide such a high resistance that is capable of completely blocking the flow of current, and therefore does not dim the LED fully.
 
 [Potentiometer - Bar Kadosh](https://youtu.be/ckfLt4m3FOc)
@@ -58,6 +64,7 @@ As is seen in the video, I am ALMOST able to get the LED to glow the whole turni
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+
 Only two things need to be modified. The output pin on the board must be changed so that the wire connects to pin 11. In the code, the value of "led" must be updated to a value of 11 so that the output pin is set to 11. A video of the fade is below.
 
 In order to actually change the way it fades, there is a variable "fadeAmount" in the code. Increasing the value of this variable will cause the LED to fade and unfade faster.
