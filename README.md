@@ -36,7 +36,7 @@ The other "delay(1000)" line between turning the LED on and off controls how lon
 
 **c. What circuit element would you want to add to protect the board and external LED?**
 
-We would like to add a resistor to protect our board and external LED. Given Ohm's law, V = IR, we can see that for a given voltage, having a low resistance will lead to a very high current. Therefore, we should add a resistor to lower the current flowing to the LED, otherwise the LED might break. 
+We would like to add a resistor to protect our board and external LED. Given Ohm's law, V = IR, we can see that for a given voltage, having a low resistance will lead to a very high current. Therefore, we should add a resistor to lower the current flowing to the LED, otherwise the LED might break. Additionally, we can add a fuse to take the initial hit and prevent the LED from being impacted in the event that something goes wrong.
  
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
