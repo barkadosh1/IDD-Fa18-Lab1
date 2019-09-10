@@ -87,19 +87,27 @@ AnalogWrite() is a method that can be used with a PWM output pin. Since we assig
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 
+My device is a charger for a portable playstation. The original charger, the schematic, and the inside of the charger are shown below.
+
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
+
+For my device, it does not appear as if there is any computation. I looked up documentation for all of the integrated circuits and none of them suggest computation. The other remaining parts can visually be determined to not be "computers."
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
+For the most part, no sensors are visually present in the PCB. However, when looking up documentation for one of the integrated circuits, I noticed that it is an optocoupler. Upon further reading, I discovered that one of the parts within the optocoupler is a photosensitive device which detects light from the other part in the optocoupler, an LED. It does this by converting the light energy (visible, infrared, etc.) into an electrical signal. Since these devices are contained within the integrated service, it is not clear if this electrical signal is conveyed to other portions of the device.
+
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
-DC power supplies use AC mains electricity as an energy source. Such power supplies will employ a transformer to convert the input voltage to a higher or lower AC voltage. A rectifier is used to convert the transformer output voltage to a varying DC voltage, which in turn is passed through an electronic filter to convert it to an unregulated DC voltage.
+The system is powered through a 110 Volt AC outlet. Within the PCB, there is transformation and regulation. On my PCB, transformers help take the 110 AC Voltage and lower it to a more reasonable voltage. My board then also appears to have a switching regulator, which transforms the power supply into a pulsed voltage. Capacitors and inductors are then used to smooth the voltage out (and potentially a filter, though I definitively see capacitors and inductors). For this system, 110 V is present until going through the transistors, capacitors, switching regulator, etc., and past that point, 5 V is present in the system. Both values were confirmed with a voltmeter.  
 
 **d. Is information stored in your device? Where? How?**
 
+It does not appear as if any information is being stored in the device. Since this device is a charger, I would guess that this makes sense, as there doesn't seem to be a need for a charger to store information. 
+
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-After understanding my board and drawing out the shcematic, I confirmed with a voltmeter 2 points on the PCB where a 5V difference existed. This occurs after the 110 AC Voltage goes through a series of transformers, rectifiers, filters, switching regulators, capacitors, etc. By this point, a 5V difference exists between 2 given points in the circuit. I soldered a wire coming out of one of those points and connected it to my breadboard. I then connected that wire to the LED and connected the LED to a resistor (in the breadboard). Finally I connected a wire from the resistor and soldered the other end back onto the second point of the PCB, closing the loop. By doing this, I hacked the electric source of my device and inserted the LED/resistor combo within the circuit to reroute the current and light up the LED.
+After understanding my board and drawing out the schematic, I confirmed with a voltmeter 2 points on the PCB where a 5V difference existed. This occurs after the 110 AC Voltage goes through a series of transformers, rectifiers, filters, switching regulators, capacitors, etc. By this point, a 5V difference exists between 2 given points in the circuit. I soldered a wire coming out of one of those points and connected it to my breadboard. I then connected that wire to the LED and connected the LED to a resistor (in the breadboard). Finally I connected a wire from the resistor and soldered the other end back onto the second point of the PCB, closing the loop. By doing this, I hacked the electric source of my device and inserted the LED/resistor combo within the circuit to reroute the current and light up the LED.
 
 <img src="https://github.com/barkadosh1/IDD-Fa19-Lab1/blob/master/IMG_9399-1.jpeg" width="800" height="700">
 
