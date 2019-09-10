@@ -6,7 +6,7 @@
 
 To initially set up my breadboard, I connected the +5V pin of the Arduino to the red rail (on the same side of the breadboard that the pin is on) and the GND pin of the Arduino to the blue rail (on the same side of the breadboard that the pin is on). While not necessary, I also connected the opposite red rail to the initial red rail and the opposite blue rail to the initial blue rail.
 
-<img src="https://github.com/barkadosh1/IDD-Fa18-Lab1/blob/master/IMG_9386.jpeg" width="600" height="500">
+<img src="https://github.com/barkadosh1/IDD-Fa18-Lab1/blob/master/IMG_9386.jpeg" width="800" height="700">
 
 ## Part B. Manually Blink a LED
 
