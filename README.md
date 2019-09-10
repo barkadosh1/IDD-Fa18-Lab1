@@ -93,11 +93,13 @@ AnalogWrite() is a method that can be used with a PWM output pin. Since we assig
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
+DC power supplies use AC mains electricity as an energy source. Such power supplies will employ a transformer to convert the input voltage to a higher or lower AC voltage. A rectifier is used to convert the transformer output voltage to a varying DC voltage, which in turn is passed through an electronic filter to convert it to an unregulated DC voltage.
+
 **d. Is information stored in your device? Where? How?**
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-**Describe what you did here.**
+After understanding my board and drawing out the shcematic, I confirmed with a voltmeter 2 points on the PCB where a 5V difference existed. This occurs after the 110 AC Voltage goes through a series of transformers, rectifiers, filters, switching regulators, capacitors, etc. By this point, a 5V difference exists between 2 given points in the circuit. I soldered a wire coming out of one of those points and connected it to my breadboard. I then connected that wire to the LED and connected the LED to a resistor (in the breadboard). Finally I connected a wire from the resistor and soldered the other end back onto the second point of the PCB, closing the loop. By doing this, I hacked the electric source of my device and inserted the LED/resistor combo within the circuit to reroute the current and light up the LED.
 
 ### 3. Build your light!
 
