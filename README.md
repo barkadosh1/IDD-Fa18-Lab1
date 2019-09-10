@@ -99,7 +99,7 @@ For my device, it does not appear as if there is any computation. I looked up do
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
-For the most part, no sensors are visually present in the PCB. However, when looking up documentation for one of the integrated circuits, I noticed that it is an optocoupler. Upon further reading, I discovered that one of the parts within the optocoupler is a photosensitive device which detects light from the other part in the optocoupler, an LED. It does this by converting the light energy (visible, infrared, etc.) into an electrical signal. Since these devices are contained within the integrated service, it is not clear if this electrical signal is conveyed to other portions of the device.
+For the most part, no sensors are visually present in the PCB. However, when looking up documentation for one of the integrated circuits, I noticed that it is an optocoupler. Upon further reading, I discovered that one of the parts within the optocoupler is a photosensitive device which detects light from the other part in the optocoupler, an LED. It does this by converting the light energy (visible, infrared, etc.) into an electrical signal. Since these devices are contained within the integrated circuit, it is not clear if this electrical signal is conveyed to other portions of the device.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
