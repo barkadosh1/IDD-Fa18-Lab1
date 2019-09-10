@@ -89,6 +89,10 @@ AnalogWrite() is a method that can be used with a PWM output pin. Since we assig
 
 My device is a charger for a portable playstation. The original charger, the schematic, and the inside of the charger are shown below.
 
+<img src="https://github.com/barkadosh1/IDD-Fa19-Lab1/blob/master/IMG_9392.jpeg" width="400" height="300"> <img src="https://github.com/barkadosh1/IDD-Fa19-Lab1/blob/master/IMG_9417.jpeg" width="400" height="300">
+
+<img src="https://github.com/barkadosh1/IDD-Fa19-Lab1/blob/master/IMG_9418.jpeg" width="800" height="800">
+
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
 For my device, it does not appear as if there is any computation. I looked up documentation for all of the integrated circuits and none of them suggest computation. The other remaining parts can visually be determined to not be "computers."
