@@ -101,6 +101,8 @@ DC power supplies use AC mains electricity as an energy source. Such power suppl
 
 After understanding my board and drawing out the shcematic, I confirmed with a voltmeter 2 points on the PCB where a 5V difference existed. This occurs after the 110 AC Voltage goes through a series of transformers, rectifiers, filters, switching regulators, capacitors, etc. By this point, a 5V difference exists between 2 given points in the circuit. I soldered a wire coming out of one of those points and connected it to my breadboard. I then connected that wire to the LED and connected the LED to a resistor (in the breadboard). Finally I connected a wire from the resistor and soldered the other end back onto the second point of the PCB, closing the loop. By doing this, I hacked the electric source of my device and inserted the LED/resistor combo within the circuit to reroute the current and light up the LED.
 
+<img src="https://github.com/barkadosh1/IDD-Fa19-Lab1/blob/master/IMG_9399-1.jpeg" width="600" height="500">
+
 ### 3. Build your light!
 
 **Make a video showing off your Frankenlight.**
